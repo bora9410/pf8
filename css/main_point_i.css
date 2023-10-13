@@ -1,0 +1,117 @@
+#main_point_i {
+  background-color: #fff;
+}
+#main_point_i .wrap {
+  width: 1080px;
+  margin: 0 auto;
+  /*! overflow: hidden; */
+}
+#main_point_i .wrap h3{
+  margin: 0 auto;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+#main_point_i .wrap .list {
+/*   width: 1600%; */
+}
+#main_point_i .wrap .list ul.class {
+  width: 100%;
+  /*! gap: 20px; */
+}
+#main_point_i .wrap .list ul.class li {
+  width: 250px;
+  height: 370px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 2px 2px 8px #c4c4c4;
+  line-height: 1.5;
+  margin: 15px;
+}
+#main_point_i .wrap .list ul.class li::before{
+  content: "";
+  display: block;
+  /*! width: 250px; */
+  height: 140px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#main_point_i .wrap .list ul.class li.class_a::before{
+  background-image: url(../img/class_1.svg);
+}
+#main_point_i .wrap .list ul.class li.class_b::before{
+  background-image: url(../img/class_2.svg);
+}
+#main_point_i .wrap .list ul.class li.class_c::before{
+  background-image: url(../img/class_3.svg);
+}
+#main_point_i .wrap .list ul.class li.class_d::before{
+  background-image: url(../img/class_4.svg);
+}
+#main_point_i .wrap .list ul.class li.class_e::before{
+  background-image: url(../img/class_5.svg);
+}
+#main_point_i .wrap .list ul.class li.class_f::before{
+  background-image: url(../img/class_6.svg);
+}
+#main_point_i .wrap .list ul.class li.class_g::before{
+  background-image: url(../img/class_7.svg);
+}
+#main_point_i .wrap .list ul.class li.class_h::before{
+  background-image: url(../img/class_8.svg);
+}
+#main_point_i .wrap .list ul.class li.class_i::before{
+  background-image: url(../img/class_9.svg);
+}
+#main_point_i .wrap .list ul.class li.class_j::before{
+  background-image: url(../img/class_4.svg);
+}
+#main_point_i .wrap .list ul.class li.class_k::before{
+  background-image: url(../img/class_10.svg);
+}
+#main_point_i .wrap .list ul.class li.class_l::before{
+  background-image: url(../img/class_11.svg);
+}
+#main_point_i .wrap .list ul.class li.class_m::before{
+  background-image: url(../img/class_12.svg);
+}
+#main_point_i .wrap .list ul.class li.class_n::before{
+  background-image: url(../img/class_9.svg);
+}
+#main_point_i .wrap .list ul.class li.class_o::before{
+  background-image: url(../img/class_3.svg);
+}
+#main_point_i .wrap .list ul.class li.class_p::before{
+  background-image: url(../img/class_7.svg);
+}
+
+#main_point_i .wrap .list ul.class li p.new {
+  color: #327ee4;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 0 22px;
+  padding-top: 10px;
+}
+#main_point_i .wrap .list ul.class li h4 {
+  font-size: 15.5px;
+  font-weight: 700;
+  padding: 0 22px;
+  line-height: 1.8;
+}
+#main_point_i .wrap .list ul.class li h5 {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0 22px;
+}
+#main_point_i .wrap .list ul.class li p {
+  font-size: 12px;
+  font-weight: 300;
+  text-align: left;
+  letter-spacing: -0.5px;
+  line-height: 1.3;
+  padding: 0 22px;
+  padding-top: 5px;
+}

@@ -1,0 +1,85 @@
+#main_point_k {
+  background-color: #fff;
+}
+#main_point_k .wrap {
+  width: 890px;
+}
+#main_point_k .wrap .img {
+  width: 48%;
+  height: 273px;
+  background-color: transparent; 
+  border-radius: 40px;
+  margin-right: 41px;
+  background-image: url(../img/free.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 70%;
+  font-size: 0;
+}
+#main_point_k .wrap .txt {
+  width: 52%;
+}
+#main_point_k .wrap .txt h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+#main_point_k .wrap .txt h3 {
+  line-height: 1.6;
+  letter-spacing: -1.3px;
+  margin-bottom: 50px;
+  font-size: 22px;
+}
+
+#main_point_k .wrap .txt a.button{
+  background-color: #2805ED;
+  padding: 0 40px;
+  line-height: 2.3;
+}
+#main_point_k .wrap .txt a.button span{
+  color: #eee;
+  font-size: 22px;
+  font-weight: 600;
+}
+#main_point_k .wrap .txt a.button:hover{
+  background-color: #6a88ff;
+}
+#main_point_k .wrap_p{
+  margin: 0 auto;
+  background-color: #1C49FF;
+  padding: 150px 0;
+  justify-content: center;
+}
+#main_point_k .wrap_p .down{
+
+}
+#main_point_k .wrap_p .content{
+  width: 890px;
+  display: flex;
+  align-items: center;
+}
+#main_point_k .wrap_p .content h3{
+  color: #eee;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+#main_point_k .wrap_p .content a{
+  display: inline-block;
+  width: 212px;
+  height: 64px;
+  border-radius: 10px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0;
+}
+#main_point_k .wrap_p .content a:nth-of-type(1){
+  background-image: url(../img/apple.svg);
+  margin-left: 94px;
+}
+#main_point_k .wrap_p .content a:nth-of-type(2){
+  background-image: url(../img/google.svg);
+  margin-left: 20px;
+}

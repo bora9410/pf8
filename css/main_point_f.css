@@ -1,0 +1,51 @@
+#main_point_f {
+  background-color: black;
+  color: #eee;
+}
+#main_point_f .wrap {
+  width: 890px;
+  align-items: center;
+  padding-bottom: 120px;
+}
+#main_point_f .wrap .txt {
+  width: 50%;
+}
+#main_point_f .wrap .txt h2 {
+  font-weight: 700;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+#main_point_f .wrap .txt h2 span{
+  color: #e7ff53;
+}
+#main_point_f .wrap .txt h3 {
+  line-height: 1.6;
+  letter-spacing: -1.3px;
+  margin-bottom: 50px;
+  font-size: 21px;
+}
+#main_point_f .wrap .txt a.button {
+  background-color: #ff1f1f;
+  padding: 0 30px;
+  line-height: 2.6;
+}
+#main_point_f .wrap .txt a.button:hover{
+  background-color: #ff4242;
+}
+#main_point_f .wrap .txt a.button span {
+  color: #eee;
+  font-size: 20px;
+  font-weight: 600;
+}
+#main_point_f .wrap .img {
+  width: 35%;
+  height: 311px;
+  background-color: #fff; 
+  border-radius: 25px;
+  margin-left: 120px;
+  background-image: url(../img/point_6.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 0;
+}

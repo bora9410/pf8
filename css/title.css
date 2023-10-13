@@ -1,0 +1,55 @@
+#title {
+  background-image: url(../img/title_bg.jpg);
+  height: 635px;
+  background-size: cover;
+}
+#title .wrap {
+  position: relative;
+  max-width: 100%;
+}
+#title .wrap .title_txt {
+  color: white;
+  position: absolute;
+  left: 22%;
+  top: 200px;
+}
+#title .wrap .title_txt p {
+  font-size: 21px;
+  padding-bottom: 15px;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+#title .wrap .title_txt h2 {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.15;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+#title .wrap .title_txt a.button {
+  color: white;
+  font-size: 20px;
+  border: 1px solid #eee;
+  line-height: 2.5;
+  padding: 0 25px;
+}
+#title .wrap .title_txt a.button span {
+}
+#title .wrap .title_img {
+}
+#title .wrap .title_img img.phone {
+  position: absolute;
+  width: 447px;
+  height: 556px;
+  right: 15%;
+  top: 30px;
+  transform: rotate(-20deg);
+}
+#title .wrap .title_img img.ui {
+  width: 447px;
+  height: 556px;
+  position: absolute;
+  transform: rotate(-20deg);
+  right: 15%;
+  top: 30px;
+}

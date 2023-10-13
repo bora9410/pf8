@@ -1,0 +1,48 @@
+#main_point_a {
+}
+#main_point_a .wrap {
+  max-width: 890px;
+  align-items: center;
+}
+#main_point_a .wrap .txt {
+  width: 52%;
+}
+#main_point_a .wrap .txt h2 {
+  font-weight: 700;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+#main_point_a .wrap .txt h3 {
+  line-height: 1.6;
+  letter-spacing: -1.3px;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+#main_point_a .wrap .txt a {
+  color: #1c49ff;
+  letter-spacing: -1px;
+}
+#main_point_a .wrap .txt a::after{
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/arrow_blue.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  vertical-align: -2px;
+}
+#main_point_a .wrap .img {
+  width: 48%;
+  height: 369px;
+  background-color: #fff; 
+  border-radius: 25px;
+  margin-left: 30px;
+  background-image: url(../img/point_1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 0;
+}

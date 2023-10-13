@@ -1,0 +1,103 @@
+#main_review {
+}
+#main_review .wrap {
+  max-width: 890px;
+  /*! overflow: hidden; */
+}
+#main_review .wrap h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.6;
+  margin-bottom: 50px;
+}
+#main_review .wrap h2 span {
+  color: #1A46FF;
+}
+#main_review .wrap ul.first {
+  align-items: flex-end;
+  padding-bottom: 100px;
+}
+#main_review .wrap ul.first li {
+  width: calc(100% / 3);
+  height: 98px;
+  background-size: initial;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 0;
+}
+#main_review .wrap ul.first li:nth-child(1){
+  background-image: url(../img/review_1.svg);
+}
+#main_review .wrap ul.first li:nth-child(2){
+  background-image: url(../img/review_2.svg);
+  height: 103px;
+}
+#main_review .wrap ul.first li:nth-child(3){
+  background-image: url(../img/review_3.svg);
+}
+#main_review .wrap .review {
+  /*! width: 200%; */
+  flex-wrap: nowrap;
+  /*! justify-content: center; */
+}
+#main_review .wrap .review ul{
+  width: 811px;
+  height: 310px;
+  border-radius: 30px;
+  background-color: #fff;
+  padding: 42px 45px 58px 65px;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 40px;
+}
+#main_review .wrap .review ul .star {
+  font-size: 0;
+  background-image: url(../img/stars.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 110px;
+  height: 25px;
+}
+#main_review .wrap .review ul li h3 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.4;
+  padding-top: 20px;
+  padding-bottom: 45px;
+  letter-spacing: -1px;
+}
+#main_review .wrap .review ul li {
+  font-size: 20px;
+  display: flex;
+}
+#main_review .wrap .review ul li p{
+  border-right: 2px solid #3E3E3E;
+  padding-right: 20px;
+}
+#main_review .wrap .review ul li span {
+  padding-left: 20px;
+}
+#main_review .wrap .review ul .kim{
+  width: 155px;
+  height: 155px;
+  border-radius: 50%;
+  background-color: #eee;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  background-image: url(../img/re_1.jpg);
+  background-size: contain;
+}
+#main_review .wrap .review ul .lee{
+  width: 155px;
+  height: 155px;
+  border-radius: 50%;
+  background-color: #eee;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  background-image: url(../img/re_2.jpg);
+  background-size: contain;
+  font-size: 0;
+}

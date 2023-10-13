@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>copy_영어 스피킹은 스픽(Speak)</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/main_review.css">
+    <link rel="stylesheet" href="css/main_point_a.css">
+    <link rel="stylesheet" href="css/main_point_b.css">
+    <link rel="stylesheet" href="css/main_point_c.css">
+    <link rel="stylesheet" href="css/main_point_d.css">
+    <link rel="stylesheet" href="css/main_point_e.css">
+    <link rel="stylesheet" href="css/main_point_f.css">
+    <link rel="stylesheet" href="css/main_point_g.css">
+    <link rel="stylesheet" href="css/main_point_h.css">
+    <link rel="stylesheet" href="css/main_point_i.css">
+    <link rel="stylesheet" href="css/main_point_j.css">
+    <link rel="stylesheet" href="css/main_point_k.css">
+    <link rel="stylesheet" href="css/main_qna.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- 제이쿼리 cdn 파일 연결 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <!-- 슬릭 -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+    <script src="slick/slick.min.js"></script>
+
+    <!-- 페이지 슬라이딩, 사이트 도트 -->
+    <link rel="stylesheet" href="css/timelinenav.css">
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+    <script src="js/smoothscroll.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            // header 슬라이드다운 - 스픽소개
+            $("header .wrap nav .introduce .company a ul.speak li").hide();
+            $("header .wrap nav .introduce .company a h2").mouseenter(function(){
+                $("header .wrap nav .introduce .company a ul.speak li").slideDown();
+            });
+            $("header .wrap, #title").not("header .wrap nav .introduce .company a h2").mouseenter(function(){
+                $("header .wrap nav .introduce .company a ul.speak li").slideUp();
+            });
+
+            // header 슬라이드 다운 - language
+            $("header .wrap nav .ai .langlist li").hide();
+            $("header .wrap nav .ai h2").mouseenter(function(){
+                $("header .wrap nav .ai .langlist li").slideDown();
+            });
+            $("header .wrap, #title").not("header .wrap nav .ai h2").mouseenter(function(){
+                $("header .wrap nav .ai .langlist li").slideUp();
+            });
+
+            // footer 슬라이드다운 - language
+            $("footer .wrap .footer_b ul.ex li.lang .langbox ul.lang-choose").hide();
+            $("footer .wrap .footer_b ul.ex li.lang").mouseenter(function(){
+                $("footer .wrap .footer_b ul.ex li.lang .langbox ul.lang-choose").slideDown();
+            });
+            $("footer .wrap").mouseenter(function(){
+                $("footer .wrap .footer_b ul.ex li.lang .langbox ul.lang-choose").slideUp();
+            });
+
+            // QnA 영역 //
+            $("#main_qna .wrap ul li p").hide();
+            $("#main_qna .wrap ul li h3").click(function(){
+                $(this).next().slideToggle();
+                $(this).parents("li").siblings().find("p").slideUp();
+                $(this).parent().parent().siblings().children().children("p").slideUp();
+            });
+            $("#main_qna .wrap ul li h3").click(function(){
+                $(this).toggleClass("colorchange");
+            });
+            // 슬릭 
+            $('.main_slick').slick({
+                    autoplay: true,
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplayspeed: 700,
+                    responsive: [
+                        {
+                        breakpoint: 900,
+                        settings: {
+                        arrows: false,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                        }
+                        },
+                        {
+                        breakpoint: 500,
+                        settings: {
+                        arrows: false,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                        }
+                        }
+                    ]
+                });
+                $('.class_slick').slick({
+                    autoplay: true,
+                    infinite: true,
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    autoplayspeed: 1500,
+                    responsive: [
+                        {
+                        breakpoint: 900,
+                        settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 2
+                        }
+                        },
+                        {
+                        breakpoint: 500,
+                        settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                        }
+                        }
+                    ]
+                });
+        });
+    </script>
+
+</head>
+
+<body>
+    <!-- 상단영역 -->
+    <header>
+        <div class="wrap flex flex-column">
+            <div class="top">
+                <a href="" class="flex">
+                    <p class="event">EVENT</p>
+                    <p class="free">스픽 7일 무료 체험</p>
+                    <span>닫기</span>
+                </a>
+            </div>
+            <nav class="total flex">
+                <div class="introduce flex">
+                    <h1><a href="">로고</a></h1>
+                    <div class="box flex">
+                        <div class="company">
+                            <a href="">
+                                <h2>스픽 소개</h2>
+                                <ul class="speak">
+                                    <li>브랜드스토리</li>
+                                    <li>커리큘럼</li>
+                                    <li>기술/학습법</li>
+                                </ul>
+                            </a>
+                            <p><a href="">사용자후기</a></p>
+                            <a href="" class="ham">menu</a>
+                        </div>
+                        <div class="ai flex">
+                            <ul>
+                                <li class="ai"><a href="">AI튜터</a></li>
+                                <li class="new"><a href="">new</a></li>
+                            </ul>
+                            <h2>한국어</h2>
+                            <ul class="langlist">
+                                <li><a href="">English</a></li>
+                                <li><a href="">한국어</a></li>
+                                <li><a href="">日本語</a></li>
+                                <li><a href="">Español</a></li>
+                                <li><a href="">中文 – 繁體</a></li>
+                                <li><a href="">Português</a></li>
+                                <li><a href="">Français</a></li>
+                                <li><a href="">Deutsch</a></li>
+                            </ul>
+                            <span class="free"><a href="">무료체험</a></span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- 타이틀영역 -->
+    <section id="title">
+        <div class="wrap">
+            <div class="title_txt">
+                <p>맞춤 수업부터 프리토킹까지</p>
+                <h2>영어 스피킹은 <br> 스픽</h2>
+                <a href="" class="button">
+                    <span>7일 무료체험</span>
+                </a>
+            </div>
+            <div class="title_img">
+                <img class="phone" src="https://global-uploads.webflow.com/61a88c135006e8345b005efd/62f38f4ae54e01528f6362b1_Frame%202-min.png" alt="핸드폰이미지">
+                <img class="ui" src="https://global-uploads.webflow.com/61a88c135006e8345b005efd/62f38f4ad368663654521d08_Frame%204-min.png" alt="ui디자인">
+            </div>
+        </div>
+    </section>
+    <!-- 내용영역 -->
+    <main>
+        <section id="main_review">
+            <div class="wrap paddingT100 paddingB50 width-content">
+                <h2>
+                    1등엔 다 이유가 있다<br>
+                    <span>앱스토어 1등 영어앱</span>
+                </h2>
+                <ul class="first flex">
+                    <li>2021 앱스토어 오늘의 앱 선정</li>
+                    <li>2020 조선일보 선정</li>
+                    <li>2020 구글플레이 선정</li>
+                </ul>
+                <div class="review flex main_slick">
+                    <ul class="kim">
+                        <li class="star">별점</li>
+                        <li>
+                            <h3>스픽은 강의가 짧아서 금방 끝낼 수 있고, <br> 실무에 유용한 표현이 정말 많아요.</h3>
+                        </li>
+                        <li>
+                            <p>배달의 민족 마케터(싱가포르 근무)</p>
+                            <span>김규림</span>
+                        </li>
+                        <li class="kim"></li>
+                    </ul>
+                    <ul class="lee">
+                        <li class="star">별점</li>
+                        <li>
+                            <h3>35년간 많은 영어 교육을 받았지만, <br> 스픽 덕분에 2회차 인생이 시작되었어요.</h3>
+                        </li>
+                        <li>
+                            <p>《별게 다 영감》저자</p>
+                            <span>이승희</span>
+                        </li>
+                        <li class="lee">img</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="main_point_a">
+            <div class="wrap flex padding100">
+                <div class="txt">
+                    <h2 class="h5">
+                        20분에 100문장!<br>
+                        압도적인 발화량
+                    </h2>
+                    <h3>
+                        하루에 100문장씩 영어로 말해본 적이 있나요? <br>
+                        스픽은 일주일 약 1,000문장의 영어 스피킹을 책임집니다.
+                    </h3>
+                    <a href="">스픽의 학습 솔루션 자세히 살펴보기</a>
+                </div>
+                <div class="img">스픽 유저 7일간 평균 발화 수 그래프</div>
+            </div>
+        </section>
+        <section id="main_point_b">
+            <div class="wrap flex padding100">
+                <div class="txt">
+                    <h2 class="h5">
+                        <span>NEW</span>
+                        영어 학습의 미래<br>
+                        AI 와의 프리토킹
+                    </h2>
+                    <h3>
+                        이제 언제 어디서나, 진짜 사람같은 AI 와 자유롭게 영어로 대화하세요. 어색한 표현이나 문법도 AI 가 고쳐줘요.
+                    </h3>
+                    <a href="">스픽 AI 튜터 자세히 살펴보기</a>
+                </div>
+                <div class="videobox">
+                    <video autoplay="" muted="" loop="">
+                        <source src="img/point_2.mp4" id="point_2" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </section>
+        <section id="main_point_c">
+            <div class="wrap flex padding100">
+                <div class="img">스픽 음성인식 이미지</div>
+                <div class="txt">
+                    <h2 class="h5">
+                        한국인 영어 발음에<br>
+                        최적화된 음성 인식
+                    </h2>
+                    <h3>
+                        빠르고 정확한 스픽의 음성 인식 기술은 마치<br> 실제 대화와 같은 경험을 제공합니다.
+                    </h3>
+                    <a href="">스픽의 특별한 기술 알아보기</a>
+                    <ul class="time flex">
+                        <li>
+                            <h4>0.1<span>sec</span></h4>
+                            <p>인식 속도</p>
+                        </li>
+                        <li>
+                            <h4>95<span>%</span></h4>
+                            <p>정확성</p>
+                        </li>
+                        <li>
+                            <h4>100<span>%</span></h4>
+                            <p>실시간</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="main_point_d">
+            <div class="wrap flex padding100">
+                <div class="txt">
+                    <h2 class="h5">
+                        하버드 출신이 제안하는<br>
+                        한국인 영어 학습 솔루션
+                    </h2>
+                    <h3>
+                        하버드 출신 창업자가 개발한 스픽은, 한국인 데이터를 바탕으로
+                        실리콘밸리 현지에서 연구 개발됩니다.
+                    </h3>
+                    <a href="">스픽 비하인드 스토리 보러가기</a>
+                </div>
+                <div class="img">스픽 창업자 사진</div>
+            </div>
+        </section>
+        <section id="main_point_e">
+            <div class="wrap flex padding100">
+                <div class="img">스픽 동영상 촬영 현장사진</div>
+                <div class="txt">
+                    <h2 class="h5">
+                        100% 미국 현지 제작<br>
+                        2,000여개의 콘텐츠
+                    </h2>
+                    <h3>
+                        최적화된 학습 경험을 제공하는 스픽의 모든 콘텐츠는<br>
+                        LA 에 위치한 자체 스튜디오에서 제작됩니다.
+                    </h3>
+                    <a href="">차별화된 스픽의 학습 콘텐츠 살펴보기</a>
+                </div>
+            </div>
+        </section>
+        <section id="main_point_f">
+            <div class="wrap flex padding100">
+                <div class="txt">
+                    <h2 class="h5">
+                        오늘부터 <span>7일간 스픽</span>을<br>
+                        <span>무료체험 0원</span>으로 만나 보세요
+                    </h2>
+                    <h3>
+                        스픽의 모든 프리미엄 콘텐츠와<br>
+                        압도적 발화량을 경험해 보세요
+                    </h3>
+                    <a href="" class="button">
+                        <span>무료체험 시작하기</span>
+                    </a>
+                </div>
+                <div class="img">타사 대비 10배 많은 영어 스피킹 연습량</div>
+            </div>
+        </section>
+        <section id="main_point_g">
+            <div class="wrap">
+                <div class="pay">
+                    <h3>무료 체험 기간 동안 해지해도<br>
+                        금액이 청구되지 않아요
+                    </h3>
+                </div>
+                <div class="rewrap flex">
+                    <div class="appreview">
+                        <h3>단 1%의 조작도 없는<br>
+                            진짜 후기를 확인하세요</h3>
+                        <p><a href="">전체 후기 확인하기</a></p>
+                    </div>
+                    <ul class="star">
+                        <li>
+                            <p class="star">별점 5점</p>
+                            <p class="txt">앱스토어 평가</p>
+                            <h4>4.8<span>/5</span></h4>
+                        </li>
+                        <li>
+                            <p class="star">별점 5점</p>
+                            <p class="txt">앱스토어 리뷰</p>
+                            <h4>74,283<span>+</span></h4>
+                        </li>
+                    </ul>
+                </div>
+                <div class="re_img flex">
+                    <div class="story">
+                        <div class="header">
+                            <h4>오로지 스피킹에만 집중할 수 있도록</h4>
+                            <p class="star">별점 5점</p>
+                        </div>
+                        <div class="date">
+                            <time datetime="2023-09-25">9월 25일</time>
+                            <p class="id">Nile K</p>
+                        </div>
+                        <p class="text_1">스피킹에 익숙하게 할 수 있도록 매우 반복 연습을 잘 시켜주네요. 오로지 스피킹에만 집중할 수 있도록 심플하게 정말 에센셜한 것만 집중을 해서 만든 것이 느껴져요. 대화를 해 볼 수 있도록 상황극을 만들어주는 것도 너무 훌륭해요.</p>
+                    </div>
+                    <div class="story">
+                        <div class="header">
+                            <h4>진짜 너무 좋아요 강추 !</h4>
+                            <p class="star">별점 5점</p>
+                        </div>
+                        <div class="date">
+                            <time datetime="2023-11-05">11월 5일</time>
+                            <p class="id">블링크인 솨란</p>
+                        </div>
+                        <p class="text_2">일단 계속 연습하고 그걸 말하게 하는데<br>
+                            그러니 기억에 더 잘 남는거 같아요 진짜 최고에요<br>
+                            영어를 진짜 못하는데 진짜 이 앱만 있으면 뭔가 잘할 거 같아요!</p>
+                    </div>
+                    <div class="story">
+                        <div class="header">
+                            <h4>26일째 사용하고 리뷰남깁니다</h4>
+                            <p class="star">별점 5점</p>
+                        </div>
+                        <div class="date">
+                            <time datetime="2023-09-09">9월 9일</time>
+                            <p class="id">네눙</p>
+                        </div>
+                        <p class="text_3">항상 작심 삼일인데 매일매일 했어요.학습이 지루하지않고 재미있기도 했고요. 최근에 영어 잘하는 친구가 제 발음이랑 영어 뱉는게 많이 자연스러워졌다고 했어요 ㅎㅎㅎ 확실히 꾸준히 하면 많이 발전할 것 같아요!</p>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <section id="main_point_h">
+            <div class="wrap paddingT100 paddingB50">
+                <div class="text">
+                    <h3>이런 사람에게 강력 추천해요!</h3>
+                    <p>문장 만들기가 어려운 왕초보부터<br>
+                        비즈니스 영어가 필요한 직장인까지<br>
+                        2,000여개 이상의 수업이 준비되어 있어요.
+                    </p>
+                </div>
+                <div class="user flex main_slick">
+                    <ul>
+                        <li class="mark">따옴표 이모티콘</li>
+                        <li>
+                            <h3>영어 듣기,읽기는 되는데<br>
+                                말하기는 어려워요
+                            </h3>
+                        </li>
+                        <li class="flex">
+                            <p>영어 회의에 고통받는 직장인</p>
+                            <span>김지안님</span>
+                        </li>
+                        <li class="kim">사진</li>
+                    </ul>
+                    <ul>
+                        <li class="mark">따옴표 이모티콘</li>
+                        <li>
+                            <h3>말하려고 하면 영어 문장 순서가<br>
+                                뒤죽박죽이 되어 버려요
+                            </h3>
+                        </li>
+                        <li class="flex">
+                            <p>수능 영어 1등급 대학생</p>
+                            <span>최세린님</span>
+                        </li>
+                        <li class="choi">사진</li>
+                    </ul>
+                    <ul>
+                        <li class="mark">따옴표 이모티콘</li>
+                        <li>
+                            <h3>혼자서는 너무 막막하고<br>
+                                과외나 학원은 부담스러워요
+                            </h3>
+                        </li>
+                        <li class="flex">
+                            <p>하루가 너무 짧은 육아맘</p>
+                            <span>박미영님</span>
+                        </li>
+                        <li class="park">사진</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="main_point_i">
+            <div class="wrap padding100">
+                <h3>내 영어 레벨에 맞는 <br>
+                    수업을 골라서 말해보세요
+                </h3>
+                <div class="list">
+                    <ul class="class flex class_slick">
+                        <li class="class_a">
+                            <p class="new">NEW</p>
+                            <h4>영어 면접 : 이젠 두렵지 않다!</h4>
+                            <h5>With Audrey</h5>
+                            <p>영어로 진행되는 면접에서 나올만한 핵심 질문들을 유닛들마다 차근차근 풀어나갈 거예요. 면접에 쓰기 적합한 비즈니스 영어가 따로 있다는 건 알고 계셨나요?</p>
+                        </li>
+                        <li class="class_b">
+                            <p class="new">NEW</p>
+                            <h4>엄마빠 영어</h4>
+                            <h5>With Lana</h5>
+                            <p>San Francisco에서 직접 육아를 하고 있는 Lana가 알려주는 생생한 엄마빠 영어! 현지 아이와 “시뮬레이션 대화”를 하시고, 우리 아이와 함께 놀면서 배우는 스피킹까지 준비되어 있어요.</p>
+                        </li>
+                        <li class="class_c">
+                            <p class="new">NEW</p>
+                            <h4>비즈니스(실무영어)</h4>
+                            <h5>With Audrey</h5>
+                            <p>미팅, 화상회의, 발표, 컨퍼런스, 토론, 협상 등에 필요한 필수 표현들을 마스터하는 코스. 상사, 고객과 하는 영어는 일상적인 영어와 표현의 방식이 다르다? 우회적이고 완곡한 영어 표현부터 비즈니스 상황에 걸맞은 정중한 표현까지 배워보세요.</p>
+                        </li>
+                        <li class="class_d">
+                            <p class="new">추천 코스</p>
+                            <h4>스피킹하며 시작(왕초보 1탄)</h4>
+                            <h5>With Kate & Christina</h5>
+                            <p>계속 처음부터 다시 시작하는 것만 같은 영어… 왜 배워도 배워도 안 될까? 접근 방식을 완전히 바꿔보세요. 아웃풋 (스피킹)에 포커스를 맞춘 영어로 배운 개념을 바로바로 적용하면서 이론을 직접 말하면서 느껴보세요!</p>
+                        </li>
+                        <li class="class_e">
+                            <h4>스피킹하며 시작(왕초보 2탄)</h4>
+                            <h5>With Kate & Sarahith Kate & Christina</h5>
+                            <p>지난 코스에서 기본적인 바탕을 쌓으시고 영어 세계관도 이해하기 시작하시면서 영어적 사고방식을 하기 시작하셨어요. 이제 꾸준히 차근차근히 잘못 이해하고 있던 개념들을 스피킹하면서 쭉 배워 볼 거예요. 새로운 선생님 Sarah도 이 두 번째 코스에서 만나보세요!</p>
+                        </li>
+                        <li class="class_f">
+                            <p class="new">인기</p>
+                            <h4>스피킹하며 시작(왕초보 3탄)</h4>
+                            <h5>With Audrey</h5>
+                            <p>이번 코스는 스픽 유저분들이 가장 많이 주신 질문들을 토대로 준비했어요. 그만큼 영어에서 제일 이해하기 어려운 부분들이 통쾌하게 설명된다는 거겠죠? 스피킹으로 기본을 확실하게 다져봐요! 아, Audrey 선생님은 혹시 만나보셨나요?</p>
+                        </li>
+                        <li class="class_g">
+                            <p class="new">인기</p>
+                            <h4>스피킹 살아남기 (기초 1탄)</h4>
+                            <h5>With Sarsh & Christina</h5>
+                            <p>스피킹은 여기서부터 시작! 영어는 조금 배운 거 같은데 말이 안 나오고 너무 어색하게 느껴지시는 분들을 위한 코스예요. 제일 자주 쓰이는 패턴들로 시작해서 스피킹이 자연스러울 때까지 차근차근히 연습해봐요.</p>
+                        </li>
+                        <li class="class_h">
+                            <p class="new">인기</p>
+                            <h4>스피킹 살아남기 (기초 2탄)</h4>
+                            <h5>With Christina & Sarah</h5>
+                            <p>1탄에 힘찬 성원에 이어서 2탄을 준비했어요! 1탄이 패턴 영어의 기본을 다지는데 중점을 맞췄다면 2탄부터는 느낌을 살리는 뉘앙스도 신경을 쓸 거예요. 패턴을 완전히 내 꺼로 만들면서 영어 표현력을 계속 늘려보세요!</p>
+                        </li>
+                        <li class="class_i">
+                            <p class="new">인기</p>
+                            <h4>스피킹 살아남기 (기초 3탄)</h4>
+                            <h5>With Audrey & Sarah</h5>
+                            <p>오랜만에 지인에게 걸려온 전화! '오랜만이다. 근데 지금 뭐 하던 중이라 다시 연락해줄게', '와이파이가 자꾸 끊기네. 뭐가 잘못됐나 봐'라고 하고 싶은데 말이 안 나온다면? 이번 Unit은 이런 일상 속 빈출 상황을 선별해서 필수적인 표현만을 뽑아봤어요.</p>
+                        </li>
+                        <li class="class_j">
+                            <h4>원어민처럼 스피킹 (중급 1탄)</h4>
+                            <h5>With Kate</h5>
+                            <p>영어에 대한 지식이 좀 있고, 영어 시험 점수도 괜찮은데 스피킹이 안 된다? 나 정도면 영어 조금 한다는 소리 듣는데... 왜 말하는 건 이렇게 힘든 걸까? 영어 기본 실력이 되시는 분들은 여기서 시작!</p>
+                        </li>
+                        <li class="class_k">
+                            <h4>원어민처럼 스피킹 (중급 2탄)</h4>
+                            <h5>With Audrey</h5>
+                            <p>영어의 언어적 그리고 문화적 접근은 한국어랑 다르다는 걸 지난 코스에서 잘 배우셨나요? 그러면 소통에 ‘느낌 전달’과 뉘앙스가 얼마나 중요하다는 걸 이제는 완전히 이해하고 계실 것 같아요. Audrey 선생님과 함께 평소에 자주 쓸만한 표현들을 이제 영어로 느낌있게 전달해 보세요!</p>
+                        </li>
+                        <li class="class_l">
+                            <h4>구동사 격파 (1탄)</h4>
+                            <h5>With Minjung, Max & Jonathan</h5>
+                            <p>get은 알겠는데 get at은 뭐고, take은 알겠는데 take in은 뭐고, make은 알겠는데 make out은 도대체 무슨 말일까? 현지 영어의 대부분을 차지하는 구동사를 하나하나 마스터하면서 스피킹 실력을 다음 단계로 끌어올려보세요!</p>
+                        </li>
+                        <li class="class_m">
+                            <p class="new">클래식</p>
+                            <h4>구동사 격파 (2탄)</h4>
+                            <h5>With Minjung, Max & Jonathan</h5>
+                            <p>구동사 격파 1탄에 이어지는 2탄! 이 코스까지 마치시면 새로운 구동사를 보셔도 감으로 의미가 바로 예상이 가능하실 거예요.</p>
+                        </li>
+                        <li class="class_n">
+                            <p class="new">NEW</p>
+                            <h4>비즈니스(회사생활영어)</h4>
+                            <h5>With Audrey</h5>
+                            <p>일상적인 오피스 라이프를 위한 필수 코스! 찐 미국 회사에서 쓰는 가성비 높은 업무 표현들을 마스터할 수 있어요. 이번 코스에서 배워 보세요! 회사뿐만 아니라 일상에서도 활용할 수 있는 표현들로 구성했어요.</p>   
+                        </li>
+                        <li class="class_o">
+                            <p class="new">NEW</p>
+                            <h4>바로 써먹는 여행영어 (필수)</h4>
+                            <h5>With Audrey & Lana</h5>
+                            <p>해외여행을 가는데 영어가 고민인 분들을 위한 코스! 공항, 호텔, 관광지, 식당 등 정말 필수적인 장소에서 필요한 표현들만 모았어요. 스픽 유저분들이 해외여행 중에 겪었던 상황과 후기를 바탕으로 제작된 코스인 만큼 리얼한 표현들을 배우실 수 있을 거예요! 야심 차게 준비한 원어민과의 실전 대화도 놓치지 마세요!</p>
+                        </li>
+                        <li class="class_p">
+                            <p class="new">NEW</p>
+                            <h4>바로 써먹는 여행영어 (완성)</h4>
+                            <h5>With Sarah & Audrey</h5>
+                            <p>식당에서 하게 되는 다양한 요청들, 해외여행의 필수 코스인 공항과 비행기 안에서 필요한 표현들을 알려드릴게요. 기차, 버스, 택시 등 대중교통을 이용할 때 맞닥뜨리는 상황과 쇼핑을 할 때, 가격 흥정하는 방법까지 이번 코스에서 여행 영어를 완성하세요!</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="main_point_j">
+            <div class="wrap padding100">
+                <div class="top flex padding50">
+                    <div class="txt">
+                        <h2 class="h5">
+                            발음, 표현, 문법까지 전부<br>
+                            실시간으로 교정해드려요
+                        </h2>
+                        <h3>
+                            AI의 정확하고 깐깐한 교정으로
+                            내 영어가 원어민처럼 자연스러워져요
+                        </h3>
+                    </div>
+                    <div class="videobox">
+                        <video src="https://s3.usespeak.com/web-landing/official/1208_AI_Tutor_Landing_Paraphrasing_1080*1080.mp4" playsinline="" autoplay="" muted="" loop="">
+                        </video>
+                    </div>
+                </div>
+                <div class="middle flex padding50">
+                    <div class="img">발음 평가지 사진</div>
+                    <div class="txt">
+                        <h2 class="h5">
+                            내 영어 발음은<br>
+                            상위 몇% 일까?
+                        </h2>
+                        <h3>
+                            매일 수업이 끝날 때마다<br>
+                            내 발음 스코어를 확인할 수 있어요
+                        </h3>
+                    </div>
+                </div>
+                <div class="bottom flex paddingT50">
+                    <div class="txt">
+                        <h2 class="h5">
+                            왕초보, 의지 박약도 OK!<br>
+                            영어 습관을 만들어 드려요
+                        </h2>
+                        <h3>
+                            혼자서는 어렵지만<br>
+                            매달 진행되는 챌린지와 함께라면<br>
+                            누구나 꾸준히 할 수 있어요
+                        </h3>
+                    </div>
+                    <div class="img">챌린지 이미지</div>
+                </div>
+            </div>
+        </section>
+        <section id="main_point_k">
+            <div class="wrap flex padding100">
+                <div class="img">스픽 무료체험 이미지</div>
+                <div class="txt">
+                    <h2 class="h5">
+                        무료체험 후 결정해도<br>
+                        늦지 않아요!
+                    </h2>
+                    <h3>
+                        스픽 프리미엄 회원과 동일하게<br>
+                        모든 기능과 콘텐츠를 이용할 수 있어요<br>
+                        (계정당 1회 가능)
+                    </h3>
+                    <a href="" class="button"><span>무료체험 시작하기</span></a>
+                </div>
+            </div>
+            <div class="wrap_p flex">
+                <div class="content">
+                    <h3>
+                        앱스토어 1위 앱 스픽<br>
+                        지금 다운 받으세요
+                    </h3>
+                    <a href="">앱스토어 접속</a>
+                    <a href="">구글 플레이 접속</a>
+                </div>
+            </div>
+        </section>
+        <section id="main_qna">
+            <div class="wrap padding100">
+                <h2 class="h5">자주 묻는 질문</h2>
+                <ul>
+                    <li>
+                        <h3>스픽은 어떤 회사인가요?</h3>
+                        <p class="p">
+                            스픽 앱의 개발 및 운영을 담당하는 스픽이지랩스 (Speakeasy Labs, Inc.)는 하버드, 스탠포드, 예일 대학교 출신의 창업자들이 만나 설립된 미국 샌프란시스코 기반의 인공지능 영어 교육 스타트업입니다. 
+                            <br>
+                            <br>
+                            2019년 한국 진출 이후 '구글 선정 올해를 빛낸 자기계발 앱', '앱스토어 교육 앱 매출 1위', '300만 회원 돌파' 등 성과를 보이고 있으며, 기술력과 빠른 성장세를 인정받아 실리콘밸리 유명 투자회사들과 리더들로부터 누적 600억 원 이상의 누적 투자 금액을 유치했습니다.
+                            <span class="block">
+                                <a href="" class="content">- [매일경제] AI 음성인식 영어회화 서비스 스픽, 250억 규모 시리즈A 투자 유치</a>
+                            </span>
+                            <span class="block">
+                                <a href="" class="content">- [한국경제] 일론 머스크가 조성한 펀드에 투자 받은 AI 음성인식 영어 학습 솔루션, 380억 원 규모 시리즈B 투자 유치</a>
+                            </span>
+                            <br>
+                            아래의 유튜브 링크를 통해, 스픽의 CEO 코너 즈윅의 창업 스토리를 확인해보세요!
+                            <br>
+                            <span class="block">
+                                <a href="" class="content">- 스픽 창업 스토리 1편</a>
+                            </span>
+                            <span class="block">
+                            <a href="" class="content">- 스픽 창업 스토리 2편</a>
+                            </span>
+                            <br>
+                        </p>    
+                    </li>
+                    <li>
+                        <h3>스픽은 다른 영어 교육 서비스와 어떤 차이가 있나요?</h3>
+                        <p class="p">
+                            운전과 수영을 책으로 배울 수 없듯이 스피킹 연습 없이 유창한 영어를 구사할 수 없습니다.
+                            <br>
+                            <br>
+                            스픽은 하버드, 스탠포드, 예일 출신의 개발팀의 손에서 탄생하는 '현존하는 최고의 음성 인식 기능'을 통해, 여타 영어 교육 서비스와 달리 사용자가 말한 후 기다릴 필요 없는 최적화된 스피킹 연습 경험을 제공합니다.
+                            <br>
+                            <br>
+                            또한 한국이 아닌 샌프란시스코 현지에서 직접 콘텐츠를 제작하기 때문에, 100% 현지의 원어민들이 실제로 사용하는 표현만이 수업에 담겨있습니다.
+                            <br>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>스픽은 어떤 사람에게 추천하나요?</h3>
+                        <p class="p">
+                            스픽은 영어를 처음 접하는 왕초보부터 비즈니스 회화가 필요하신 분, 혹은 아이와 함께 영어를 학습하시는 분까지도 이용하실 수 있도록 2,000개 이상의 방대한 수업으로 구성되어있습니다.
+                            <br>
+                            <br>
+                            또한 원어민과의 자유 대화 수업을 원하시는 중~고급 학습자에게 적합한, 'AI 튜터' 수업이 2023년 1월 출시되었습니다.
+                            <br>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>AI 튜터는 어떤 서비스인가요?</h3>
+                        <p class="p">
+                            AI 튜터는 2023년 1월 정식 출시된 스픽의 신기능으로, AI 튜터와 자유롭게 대화할 수 있는 수업입니다. 다양한 영어 표현을 배우고, 정해진 영어 표현을 스피킹 하는 기존의 방식에서 한 단계 나아가 내가 원하는 주제로 실제 대화를 할 수 있습니다.
+                            <br>
+                            <br>
+                            다양한 상황을 연습하는 롤플레잉 수업과 하나의 주제에 대해 심도 있게 이야기하는 프리토킹 수업, 다양한 주제와 상황에서의 자유 토픽 롤플레이 수업이 준비되어 있습니다.
+                            <br>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>스픽 멤버십은 구매하지 않고 AI 튜터만 사용할 수 있나요?</h3>
+                        <p class="p">
+                            현재 AI 튜터만 별도로 사용할 수 있는 구독권은 제공하고 있지 않습니다.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>기존 프리미엄 유저도 AI 튜터를 사용할 수 있나요?</h3>
+                        <p class="p">
+                            AI 튜터는 스픽 앱 내에서 만나보실 수 있으며 기존 프리미엄 유저도 추가 과금 없이 사용이 가능하도록 매월 2,000 크레딧을 지급 해드립니다. 기존 월간/연간 멤버십 유저분들은 구독을 시작하신 일자를 기준으로, 기존의 평생 이용권 멤버십 유저분들은 매월 1일 기준으로 2,000 크레딧이 갱신됩니다.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>크레딧이 무엇인가요? 어떻게 사용하나요?</h3>
+                        <p class="p">
+                            크레딧이란 <span class="bold">AI 튜터 이용 시 사용할 수 있는 이용 단위이며 1 크레딧당 1개의 단어를 사용하실 수 있습니다.</span> 수업 중 65개의 단어를 말씀하셨다면 65크레딧이 차감되게 됩니다. 크레딧은 멤버십 구독 시작 일자를 기준으로 매월 충전됩니다. 구독을 1월 3일에 시작하셨다면, 매달 3일에 크레딧이 자동으로 충전되며  멤버십의 종류에 따라 한 달에 2,000/10,000/무제한 크레딧이 제공됩니다. 현재 사용하신 크레딧과 잔여 크레딧은 AI 튜터 탭 > 좌측 상단 기록 및 사용 아이콘 > AI 튜터 사용량에서 확인하실 수 있습니다.
+                            <br>
+                            <br>
+                            크레딧을 다 소진하신 경우, 프리미엄 플러스 혹은 무제한 요금제로 업그레이드 하여 이용하실 수 있습니다. 모든 스픽의 요금제는 스픽 앱의 프리미엄 이용권과 AI 튜터 크레딧을 함께 포함하여 제공하고 있습니다. 크레딧만 별도로 추가하는 것은 불가한 점 양해 부탁드립니다. 수업 중간에 크레딧이 다 떨어져도 이미 시작한 수업은 끝까지 진행되니 걱정하지 않으셔도 됩니다.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>사용해보고 만족스럽지 않으면 취소할 수 있나요?</h3>
+                        <p class="p">
+                            물론입니다! 무료 체험 기간 중에는 언제든지 취소가 가능하며, 만약 결제를 진행하신 후에도 스픽이 만족스럽지 않으시다면 7일 이내에는 전액 환불을 진행해드리고 있습니다.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <!-- 하단영역 -->
+    <footer>
+        <div class="wrap padding100">
+            <div class="footer_a flex">
+                <div class="brand flex flex-column">
+                    <a href="">speak</a>
+                    <a href="">appstore</a>
+                    <a href="">googlestore</a>
+                </div>
+                <div class="notice flex">
+                    <ul>
+                        <li><a href="">브랜드 스토리</a></li>
+                        <li><a href="">커리큘럼</a></li>
+                        <li><a href="">기술/학습법</a></li>
+                        <li><a href="">사용자 후기</a></li>
+                        <li><a href="">AI 튜터</a></li>
+                        <li><a href="">B2B/제휴문의</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">언론보도</a></li>
+                        <li><a href="">자주 묻는 질문</a></li>
+                        <li><a href="">스픽 인스타그램</a></li>
+                        <li><a href="">스픽 블로그</a></li>
+                        <li><a href="">채용</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_b flex">
+                <ul class="ex">
+                    <li><a href="#">서비스 이용약관</a></li>
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li class="lang">
+                        <h3>한국어</h3>
+                        <div class="langbox">
+                            <ul class="lang-choose">
+                                <li><a href="#">English</a></li>
+                                <li><a href="#">한국어</a></li>
+                                <li><a href="#">日本語</a></li>
+                                <li><a href="#">Español</a></li>
+                                <li><a href="#">中文 – 繁體</a></li>
+                                <li><a href="#">Português</a></li>
+                                <li><a href="#">Français</a></li>
+                                <li><a href="#">Deutsch</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <address>
+                스픽이지랩스코리아 주식회사 | 대표이사: 코너니콜라이즈윅   전화번호/이메일: 1668-1051/support@usespeak.com
+                <br>
+                주소: 서울 강남구 선릉로92길 36 대동빌딩 7층     사업자등록번호: 553-86-02127 | 법인등록번호: 110111-7650834
+                <br>
+                통신판매업 신고번호: 제 2020-서울강남-02835호
+            </address>
+            <p class="copyright">© 2020 Speakeasy Labs, Inc. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,221 @@
+.fixed{
+  position: fixed;
+}
+header {
+
+}
+header .wrap {
+  width: 100%;
+}
+header .wrap .top {
+  display: flex;
+  justify-content: center;
+  padding: 22px 0 24px 0;
+  background-color: #1c49ff;
+  position: relative;
+  /*! cursor: pointer; */
+}
+header .wrap .top a {
+  align-items: center;
+}
+header .wrap .top a p {
+  color: #f3f3f3;
+}
+header .wrap .top a p.event {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #5375FF;
+  padding: 6px 7px;
+  font-size: 16px;
+  font-weight: 600;
+}
+header .wrap .top a p.free {
+  font-size: 17px;
+  margin-left: 10px;
+  font-weight: 500;
+}
+header .wrap .top span{
+  position: absolute;
+  right: 117px;
+  width: 26px;
+  height: 26px;
+  background-color: #5375FF;
+  border-radius: 50%;
+  font-size: 0;
+  background-image: url(../img/close_white.svg);
+  background-size: contain;
+}
+header .wrap nav.total {
+  padding: 23px 0 25px 0;
+  margin: 0 90px;
+  /*! justify-content: space-between; */
+  box-sizing: border-box;
+}
+header .wrap nav .introduce {
+  align-items: center;
+  width: 100%;
+}
+header .wrap nav .introduce h1 {
+  margin-right: 55px;
+}
+header .wrap nav .introduce .box{
+  
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+header .wrap nav .introduce h1 a {
+  background-image: url(../img/logo.svg);
+  background-size: contain;
+  width: 130px;
+  height: 31px;
+  display: block;
+  font-size: 0;
+}
+header .wrap nav .introduce .company {
+  /*! margin-right: 90px; */
+  position: relative;
+  display: flex;
+}
+header .wrap nav .introduce .company a.ham {
+  display: none;
+}
+header .wrap nav .introduce .company a h2{
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+header .wrap nav .introduce .company a h2::after{
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-image: url(../img/scroll_down.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 80px;
+  top: 7px;
+}
+header .wrap nav .introduce .company a ul.speak {
+  background-color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  margin-top: 7px;
+}
+header .wrap nav .introduce .company a ul.speak li{
+  display: block;
+  line-height: 1.5;
+  padding: 13px 23px;
+  font-weight: 600;
+}
+header .wrap nav .introduce .company a ul.speak li:hover{
+  color: #1C49FF;
+}
+header .wrap nav .introduce p {
+  margin-left: 70px;
+}
+header .wrap nav .introduce p a {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+header .wrap nav .ai {
+  align-items: center;
+  position: relative;
+}
+header .wrap nav .ai ul {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+header .wrap nav .ai ul li.ai {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #1c49ff;
+}
+header .wrap nav .ai ul li.ai a{
+}
+header .wrap nav .ai ul li.new{
+  color: #fff;
+  background-color: #29c195;
+  border-radius: 5px;
+  font-size: 9px;
+  padding: 0 2px;
+  line-height: 1.8;
+  margin-right: 90px;
+  transform: translateY(-10px);
+}
+header .wrap nav .ai ul li.new a{
+  color: #fff;
+}
+header .wrap nav .ai h2{
+  font-size: 18px;
+  position: relative;
+}
+header .wrap nav .ai h2::before{
+  content: "";
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  background-image: url(../img/language.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 3px;
+  position: absolute;
+  /*! bottom: 11px; */
+  left: -20px;
+}
+header .wrap nav .ai h2::after{
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-image: url(../img/scroll_down.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 4px;
+  position: absolute;
+  bottom: -3px;
+}
+header .wrap nav .ai ul.langlist {
+  background-color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  margin-top: 7px;
+  top: 31px;
+  z-index: 1;
+}
+header .wrap nav .ai ul.langlist li {
+  display: block;
+  padding: 13px 23px;
+  font-weight: 600;
+}
+header .wrap nav .ai ul.langlist li a{
+}
+header .wrap nav .ai ul.langlist li:nth-child(2) a{
+  color: #0082f3;
+}
+header .wrap nav .ai ul.langlist li:nth-child(2) a:hover{
+  color: #333;
+}
+header .wrap nav .ai ul.langlist li a:hover{
+  color: #1C49FF;
+}
+header .wrap nav .box .ai span.free{
+  display: inline-block;
+  border-radius: 30px;
+  background-color: #1C49FF;
+  padding: 13px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 35px;
+}
+header .wrap nav .box .ai span.free a{
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: #f3f3f3;
+}
+/*  */

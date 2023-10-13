@@ -1,0 +1,98 @@
+#main_point_j {
+
+}
+#main_point_j .wrap {
+  width: 890px;
+  margin: 0 auto;
+}
+#main_point_j .wrap .top {
+  align-items: center;
+}
+#main_point_j .wrap .top .txt {
+  width: 60%;
+}
+#main_point_j .wrap .top .txt h2 {
+  font-weight: 700;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+#main_point_j .wrap .top .txt h3 {
+  line-height: 1.6;
+  letter-spacing: -1.3px;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+#main_point_j .wrap .videobox{
+  width: 35%;
+  height: 311px;
+  border-radius: 25px;
+  margin-left: 92px;
+  overflow: hidden;
+  /*! background-color: white; */
+}
+#main_point_j .wrap .videobox video{
+  width: 100%;
+  height: auto;
+}
+#main_point_j .wrap .videobox video::after{
+  content: "";
+  clear: both;
+}
+#main_point_j .wrap .middle {
+  align-items: center;
+}
+#main_point_j .wrap .middle .img {
+  width: 35%;
+  height: 311px;
+  background-color: transparent;
+  border-radius: 25px;
+  margin-right: 92px;
+  background-image: url(../img/middle.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  font-size: 0;
+}
+#main_point_j .wrap .middle .txt {
+
+}
+#main_point_j .wrap .middle .txt h2 {
+  font-weight: 700;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+#main_point_j .wrap .middle .txt h3 {
+  line-height: 1.6;
+  letter-spacing: -1.3px;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+#main_point_j .wrap .bottom {
+  align-items: center;
+}
+#main_point_j .wrap .bottom .txt {
+  width: 60%;
+}
+#main_point_j .wrap .bottom .txt h2 {
+  font-weight: 700;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+#main_point_j .wrap .bottom .txt h3 {
+  line-height: 1.6;
+  letter-spacing: -1.3px;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+#main_point_j .wrap .bottom .img {
+  width: 35%;
+  height: 311px;
+  background-color: transparent;
+  border-radius: 25px;
+  margin-left: 92px;
+  background-image: url(../img/bottom.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  font-size: 0;
+}
