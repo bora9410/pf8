@@ -115,3 +115,34 @@
   padding: 0 22px;
   padding-top: 5px;
 }
+
+/* 슬릭 옆으로 화살표 설정 */
+#main_point_i .wrap .list .slick-prev{
+  z-index: 1;
+  left: -50px;
+  top: 50%;
+}
+#main_point_i .wrap .list .slick-next{
+  z-index: 1;
+  right: -50px;
+  top: 50%;
+}
+#main_point_i .wrap .list button.slick-prev::before {
+  content: "";
+  background-image: url(../img/arrow_blue.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+#main_point_i .wrap .list button.slick-next::before {
+  content: "";
+  background-image: url(../img/arrow_blue.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}

@@ -28,6 +28,8 @@ header .wrap .top a p.event {
   padding: 6px 7px;
   font-size: 16px;
   font-weight: 600;
+  background-color: #D0D9FF;
+  color: #333;
 }
 header .wrap .top a p.free {
   font-size: 17px;

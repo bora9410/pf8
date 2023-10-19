@@ -96,3 +96,34 @@
   background-size: contain;
   font-size: 0;
 }
+
+/* 슬릭 옆으로 이동 버튼 */
+#main_point_h .wrap .user .slick-prev{
+  z-index: 1;
+  left: -20px;
+  top: 60%;
+}
+#main_point_h .wrap .user .slick-next{
+  z-index: 1;
+  right: -20px;
+  top: 60%;
+}
+#main_point_h .wrap .user button.slick-prev::before {
+  content: "";
+  background-image: url(../img/arrow_blue.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+#main_point_h .wrap .user button.slick-next::before {
+  content: "";
+  background-image: url(../img/arrow_blue.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}

@@ -38,6 +38,9 @@
   content: "";
   clear: both;
 }
+#main_point_j .wrap .videobox span{
+  visibility: hidden;
+}
 #main_point_j .wrap .middle {
   align-items: center;
 }

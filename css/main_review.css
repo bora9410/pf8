@@ -88,6 +88,7 @@
   right: 50px;
   background-image: url(../img/re_1.jpg);
   background-size: contain;
+  font-size: 0;
 }
 #main_review .wrap .review ul .lee{
   width: 155px;
@@ -100,4 +101,35 @@
   background-image: url(../img/re_2.jpg);
   background-size: contain;
   font-size: 0;
+}
+
+/* 슬릭 옆으로 이동 버튼 */
+#main_review .wrap .review .slick-prev{
+  z-index: 1;
+  left: -20px;
+  top: 40%;
+}
+#main_review .wrap .review .slick-next{
+  z-index: 1;
+  right: -20px;
+  top: 40%;
+}
+#main_review .wrap .review button.slick-prev::before {
+  content: "";
+  background-image: url(../img/arrow_blue.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+#main_review .wrap .review button.slick-next::before {
+  content: "";
+  background-image: url(../img/arrow_blue.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
 }
