@@ -1,5 +1,6 @@
-# 프로젝트명 : 스픽 홈페이지 클론코딩 리뉴얼
-스픽 홈페이지를 리뉴얼해서 만든 포트폴리오 작품입니다.
+# 프로젝트명 : 스픽 홈페이지 클론코딩
+- 개인 프로젝트 (참여도 100%)
+- 접근성 및 웹표준을 고려해 제작 및 일부 수정
 
 ## 원본 웹사이트
 원본 url: https://www.usespeak.com/ko?utm_source=naver_ad&utm_campaign=23_al_brandad&utm_content=ongoing_aitutor_pc
@@ -18,12 +19,20 @@
 - CSS
 - JavaScript
 - jQuery
- 
+
+## 사용 프로그램
+- Visual Studio Code
+- SASS
+- OpenWax (웹표준,접근성 진단)
+- CCA (색 명암 분석기)
+- W3C (마크업 검사)
+- WAVE (접근성 검사기)
+  
 ## 작업페이지
-- index
+- Main index
   
 ## 작업기간
-9시간
+7시간
 
 ## 작성자 정보
 문보라
