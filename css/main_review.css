@@ -2,7 +2,6 @@
 }
 #main_review .wrap {
   max-width: 890px;
-  /*! overflow: hidden; */
 }
 #main_review .wrap h2 {
   text-align: center;
@@ -37,9 +36,7 @@
   background-image: url(../img/review_3.svg);
 }
 #main_review .wrap .review {
-  /*! width: 200%; */
   flex-wrap: nowrap;
-  /*! justify-content: center; */
 }
 #main_review .wrap .review ul{
   width: 811px;

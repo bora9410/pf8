@@ -28,7 +28,6 @@
   border-radius: 25px;
   margin-left: 92px;
   overflow: hidden;
-  /*! background-color: white; */
 }
 #main_point_j .wrap .videobox video{
   width: 100%;
@@ -39,7 +38,7 @@
   clear: both;
 }
 #main_point_j .wrap .videobox span{
-  visibility: hidden;
+
 }
 #main_point_j .wrap .middle {
   align-items: center;

@@ -4,7 +4,6 @@
 #main_point_i .wrap {
   width: 1080px;
   margin: 0 auto;
-  /*! overflow: hidden; */
 }
 #main_point_i .wrap h3{
   margin: 0 auto;
@@ -15,11 +14,11 @@
   margin-bottom: 50px;
 }
 #main_point_i .wrap .list {
-/*   width: 1600%; */
+
 }
 #main_point_i .wrap .list ul.class {
   width: 100%;
-  /*! gap: 20px; */
+
 }
 #main_point_i .wrap .list ul.class li {
   width: 250px;
@@ -33,7 +32,6 @@
 #main_point_i .wrap .list ul.class li::before{
   content: "";
   display: block;
-  /*! width: 250px; */
   height: 140px;
   background-size: cover;
   background-position: center;

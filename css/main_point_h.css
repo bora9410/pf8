@@ -3,7 +3,6 @@
 #main_point_h .wrap {
   width: 890px;
   margin: 0 auto;
-  /*! overflow: hidden; */
 }
 #main_point_h .wrap .text {
   text-align: center;
@@ -20,7 +19,6 @@
   line-height: 1.6;
 }
 #main_point_h .user {
-  /*! width: 300%; */
   padding-top: 80px;
 }
 #main_point_h .user ul {
